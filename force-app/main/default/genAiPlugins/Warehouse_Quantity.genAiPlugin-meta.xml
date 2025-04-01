@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aiPluginUtterances>
+        <developerName>utterance_checkitemq0</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_checkitemq0</masterLabel>
+        <utterance>Check item quantities for warehouses West and North.</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_givemetheq1</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_givemetheq1</masterLabel>
+        <utterance>Give me the quantity available at the South warehouse?</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_whatismyst2</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_whatismyst2</masterLabel>
+        <utterance>What is my stock level in the East warehouse?</utterance>
+    </aiPluginUtterances>
+    <description>This topic handles inquiries related to checking item quantities in warehouses. It assists users in verifying available stock levels.</description>
+    <developerName>Warehouse_Quantity</developerName>
+    <genAiFunctions>
+        <functionName>Warehouse_Item_Quantity</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If a user requests item quantity, verify the warehouse location first.</description>
+        <developerName>instruction_ifauserreq0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifauserreq0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If their is no quantity available in the specified warehouse, inform the user and suggest checking another warehouse if applicable.</description>
+        <developerName>instruction_iftheirisn1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_iftheirisn1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When given a warehouse name, always capitalize it. Ex: south become South, north become North</description>
+        <developerName>instruction_whengivena2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whengivena2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When providing item quantities, include both current stock levels and any pending restock information.</description>
+        <developerName>instruction_whenprovid3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenprovid3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Always respond to the user in a nicely formatted human readable format. Never output json.</description>
+        <developerName>instruction_alwaysresp4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_alwaysresp4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Warehouse Quantity</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to check and report item quantities in the warehouses based on user requests. Do not handle any other types of inquiries. Always format your response in a kind human readable format.</scope>
+</GenAiPlugin>

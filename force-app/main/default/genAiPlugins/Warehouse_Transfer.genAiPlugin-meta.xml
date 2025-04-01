@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aiPluginUtterances>
+        <developerName>utterance_canyoutran0</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_canyoutran0</masterLabel>
+        <utterance>Can you transfer 50000 units from the East warehouse to the South warehouse?</utterance>
+    </aiPluginUtterances>
+    <aiPluginUtterances>
+        <developerName>utterance_moveitemsf1</developerName>
+        <language>en_US</language>
+        <masterLabel>utterance_moveitemsf1</masterLabel>
+        <utterance>Move 1000 items from the North warehouse to the West one.</utterance>
+    </aiPluginUtterances>
+    <description>Facilitates the transfer of items from one warehouse to another. Handles user requests related to warehouse transfers.</description>
+    <developerName>Warehouse_Transfer</developerName>
+    <genAiFunctions>
+        <functionName>Warehouse_Transfer_Flow</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Always capitalize the warehouse names. Ex: south become South, east become East</description>
+        <developerName>instruction_alwayscapi0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_alwayscapi0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If a user requests to transfer items, confirm the source and destination warehouses.</description>
+        <developerName>instruction_ifauserreq1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifauserreq1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If there are any issues with the transfer, inform the user and provide possible solutions or alternatives.</description>
+        <developerName>instruction_ifthereare2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifthereare2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Notify the user once the transfer request has been successfully processed.</description>
+        <developerName>instruction_notifytheu3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_notifytheu3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When you are asked to do a transfer, always ask the user to confirm by giving him a well formatted summary stating the origin warehouse, the destination warehouse, and the unit quantity.</description>
+        <developerName>instruction_whenyouare4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_whenyouare4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Warehouse Transfer</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to assist with transferring items between warehouses. You must not handle any other types of inventory management or order processing.</scope>
+</GenAiPlugin>

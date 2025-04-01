@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <developerName>AI_TransferJsonParser</developerName>
+    <masterLabel>AI_TransferJsonParser</masterLabel>
+    <templateVersions>
+        <content>Using the json below, generate a short human readable summary of the transfer described in the json.
+
+{!$Input:transferJsonOutput}
+</content>
+        <inputs>
+            <apiName>transferJsonOutput</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>transferJsonOutput</masterLabel>
+            <referenceName>Input:transferJsonOutput</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+    </templateVersions>
+    <templateVersions>
+        <content>Using the json below, generate a short human readable summary of the transfer described in the json. Only provide the summary, no other explanation.
+
+{!$Input:transferJsonOutput}
+</content>
+        <inputs>
+            <apiName>transferJsonOutput</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>transferJsonOutput</masterLabel>
+            <referenceName>Input:transferJsonOutput</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultBedrockAnthropicClaude3Haiku</primaryModel>
+        <status>Published</status>
+    </templateVersions>
+    <templateVersions>
+        <content>Using the json below, generate a short human readable summary of the transfer described in the json informing a user of what happened. Only provide the summary, no other explanation.
+
+{!$Input:transferJsonOutput}
+</content>
+        <inputs>
+            <apiName>transferJsonOutput</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>transferJsonOutput</masterLabel>
+            <referenceName>Input:transferJsonOutput</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultBedrockAnthropicClaude3Haiku</primaryModel>
+        <status>Published</status>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

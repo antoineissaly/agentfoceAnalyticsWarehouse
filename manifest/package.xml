@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>AI_ApiCallUtility</members>
+        <members>AI_WarehouseQuantity</members>
+        <members>AI_WarehouseTransfer</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>AI_WarehouseTransferFlow</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Transfer_Initiated_Notif</members>
+        <name>CustomNotificationType</name>
+    </types>
+    <types>
+        <members>AI_TransferJsonParser</members>
+        <name>GenAiPromptTemplate</name> </types>
+     <types>
+        <members>Warehouse_Transfer</members>
+        <members>Warehouse_Quantity</members>
+        <name>GenAiPlugin</name> </types>
+    <version>60.0</version> </Package>
