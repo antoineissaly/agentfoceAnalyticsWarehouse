@@ -91,5 +91,5 @@ This repository contains the source code for the following Salesforce metadata c
 ## External Dependencies
 
 * **Warehouse Management System (Heroku App):** This project requires a running instance of the simulated WMS application.
-    * **Source Code:** [https://github.com/antoineissaly/PLACEHOLDER](https://github.com/antoineissaly/PLACEHOLDER)
+    * **Source Code:** [https://github.com/antoineissaly/miniWarehouse](https://github.com/antoineissaly/miniWarehouse)
     * **Action Required:** You must deploy this Heroku application (or your actual WMS/ERP endpoint) and ensure it's accessible. Update the Salesforce configuration (e.g., Named Credential) with the correct URL of **your deployed instance**. *(The provided link seems to be a placeholder; please update it if you have the correct repository link)*.
